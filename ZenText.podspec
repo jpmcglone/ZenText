@@ -20,7 +20,7 @@ s.description      = <<-DESC
 ZenText makes NSAttributedStrings easy! It also functions as a Copy and Localization tool. Check it out and leave me some feedback.
 DESC
 
-s.homepage         = "https://github.com/trifl/ZenText"
+s.homepage         = "https://github.com/bindlechat/ZenText"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 s.license          = 'MIT'
 s.author           = { "JP McGlone" => "jp@trifl.co" }
