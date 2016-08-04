@@ -1,0 +1,6 @@
+framework module ZenText {
+  umbrella header "ZenText-umbrella.h"
+
+  export *
+  module * { export * }
+}
