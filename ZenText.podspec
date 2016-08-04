@@ -24,7 +24,7 @@ s.homepage         = "https://github.com/bindlechat/ZenText"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 s.license          = 'MIT'
 s.author           = { "JP McGlone" => "jp@trifl.co" }
-s.source           = { :git => "https://github.com/Bindle/ZenText.git", :tag => s.version.to_s }
+s.source           = { :git => "https://github.com/bindlechat/ZenText.git", :tag => s.version.to_s }
 s.social_media_url = 'https://twitter.com/jpmcglone'
 
 s.platform     = :ios, '8.0'
