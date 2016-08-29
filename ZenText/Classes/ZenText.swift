@@ -85,7 +85,7 @@ public class Manager {
         return lang
     }
     
-    internal func attributesForStyle(style: Style?) -> [String : AnyObject]? {
+    public func attributesForStyle(style: Style?) -> [String : AnyObject]? {
         guard let style = style else { return nil }
         
         // if there is no size, use 12
