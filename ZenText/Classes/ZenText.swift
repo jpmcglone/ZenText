@@ -2,8 +2,8 @@ import Foundation
 
 public let manager = Manager(config: Config())
 
-public class Manager {
-    public var config: Config
+open class Manager {
+    open var config: Config
     
     // applying a style only updates the non-nil values. In the order the styles are applied.
     public init(config: Config) {
@@ -11,45 +11,45 @@ public class Manager {
     }
     
     // This will ignore style
-    public func string(key key: String, args: [String] = []) -> String? {
+    open func string(key: String, args: [String] = []) -> String? {
         guard let language = firstAvailableLanguage(key: key) else { return key }
-        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(locale: language, key: key) else { return nil }
+        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
         return string(copyComponents, args: args)
     }
     
     // Get a styled (attributed) string from `copy`
-    public func attributedString(key key: String, args: [String] = []) -> NSAttributedString? {
+    open func attributedString(key: String, args: [String] = []) -> NSAttributedString? {
         guard let language = firstAvailableLanguage(key: key) else { return NSAttributedString(string: key) }
-        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(locale: language, key: key) else { return nil }
+        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
         return attributedString(copyComponents, args: args)
     }
     
-    public func string(copyComponents: [CopyComponent], args: [String] = []) -> String {
+    open func string(_ copyComponents: [CopyComponent], args: [String] = []) -> String {
         var string = ""
         //combine copyComponents without their style
         for component in copyComponents {
             // check for args in component
             // TODO: this isn't very efficient. Consider an algorithm that does this in one pass, instead of n
             var value = component.value
-            for (index, arg) in args.enumerate() {
-                value = value.stringByReplacingOccurrencesOfString("$\(index)", withString: arg)
+            for (index, arg) in args.enumerated() {
+                value = value.replacingOccurrences(of: "$\(index)", with: arg)
             }
             string += value
         }
         return string
     }
     
-    internal func styleNamesFromStyleString(styleString: String) -> [String] {
-        return styleString.componentsSeparatedByString(" ")
+    internal func styleNamesFromStyleString(_ styleString: String) -> [String] {
+        return styleString.components(separatedBy: " ")
     }
     
     // Make an attributedString on the fly with CopyComponents
-    public func attributedString(copyComponents: [CopyComponent], args: [String] = []) -> NSAttributedString {
+    open func attributedString(_ copyComponents: [CopyComponent], args: [String] = []) -> NSAttributedString {
         let string = NSMutableAttributedString()
         for component in copyComponents {
             var value = component.value
-            for (index, arg) in args.enumerate() {
-                value = value.stringByReplacingOccurrencesOfString("$\(index)", withString: arg)
+            for (index, arg) in args.enumerated() {
+                value = value.replacingOccurrences(of: "$\(index)", with: arg)
             }
             
             var style = component.style
@@ -58,9 +58,9 @@ public class Manager {
                     // multiple styles are possible
                     for styleName in styleNamesFromStyleString(styleName) {
                         if style == nil {
-                            style = config.styles?(name: styleName)
+                            style = config.styles?(styleName)
                         } else {
-                            style!.append(config.styles?(name: styleName))
+                            style!.append(config.styles?(styleName))
                         }
                     }
                 }
@@ -68,16 +68,16 @@ public class Manager {
             
             let attributes = attributesForStyle(style)
             let attributedValue = NSAttributedString(string: value, attributes: attributes)
-            string.appendAttributedString(attributedValue)
+            string.append(attributedValue)
         }
         return string
     }
     
     // MARK: - Private
-    private func firstAvailableLanguage(key key: String) -> String? {
+    fileprivate func firstAvailableLanguage(key: String) -> String? {
         var lang: String? = nil
         for language in config.languages {
-            if let _ = config._copy[language]?[key] ?? config.copy?(locale: language, key: key) {
+            if let _ = config._copy[language]?[key] ?? config.copy?(language, key) {
                 lang = language
                 break
             }
@@ -85,7 +85,7 @@ public class Manager {
         return lang
     }
     
-    public func attributesForStyle(style: Style?) -> [String : AnyObject]? {
+    open func attributesForStyle(_ style: Style?) -> [String : AnyObject]? {
         guard let style = style else { return nil }
         
         // if there is no size, use 12
@@ -94,27 +94,27 @@ public class Manager {
         if let fontName = style.fontName {
             font = UIFont(name: fontName, size: fontSize)
         } else {
-            font = UIFont.systemFontOfSize(fontSize)
+            font = UIFont.systemFont(ofSize: fontSize)
         }
         
         var attributes = [String : AnyObject]()
         attributes[NSForegroundColorAttributeName] = style.color
         
-        if let color = style.color, alpha = style.alpha {
-            attributes[NSForegroundColorAttributeName] = color.colorWithAlphaComponent(alpha)
+        if let color = style.color, let alpha = style.alpha {
+            attributes[NSForegroundColorAttributeName] = color.withAlphaComponent(alpha)
         }
         
         attributes[NSFontAttributeName] = font
         
-        if let underline = style.underline where underline {
-            attributes[NSUnderlineStyleAttributeName] = NSUnderlineStyle.StyleSingle.rawValue
+        if let underline = style.underline , underline {
+            attributes[NSUnderlineStyleAttributeName] = NSUnderlineStyle.styleSingle.rawValue as AnyObject?
         } else {
             attributes[NSUnderlineStyleAttributeName] = nil
         }
         
         attributes[NSBackgroundColorAttributeName] = style.backgroundColor
         // For TTTLabel support
-        attributes["TTTBackgroundFillColor"] = style.backgroundColor?.CGColor
+        attributes["TTTBackgroundFillColor"] = style.backgroundColor?.cgColor
         
         return attributes
     }

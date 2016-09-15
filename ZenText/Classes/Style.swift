@@ -1,12 +1,12 @@
 import Foundation
 
-public class Style: StringLiteralConvertible {
-    public var color: UIColor?
-    public var fontName: String?
-    public var fontSize: CGFloat?
-    public var underline: Bool?
-    public var alpha: CGFloat?
-    public var backgroundColor: UIColor?
+open class Style: ExpressibleByStringLiteral {
+    open var color: UIColor?
+    open var fontName: String?
+    open var fontSize: CGFloat?
+    open var underline: Bool?
+    open var alpha: CGFloat?
+    open var backgroundColor: UIColor?
     
     public required init(stringLiteral value: String) {
         for styleName in ZenText.manager.styleNamesFromStyleString(value) {
@@ -41,7 +41,7 @@ public class Style: StringLiteralConvertible {
         self.backgroundColor = backgroundColor
     }
     
-    public func append(style: Style?) {
+    open func append(_ style: Style?) {
         guard let style = style else { return }
         if let color = style.color { self.color = color }
         if let fontName = style.fontName { self.fontName = fontName }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "ZenText"
-s.version          = "1.0.1"
+s.version          = "3.0.0"
 s.summary          = "ZenText makes NSAttributedStrings EASY! It also functions as a Copy and Localization tool."
 
 # This description is used to generate tags and improve search results.
