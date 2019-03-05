@@ -1,12 +1,14 @@
 use_frameworks!
 
-target 'ZenText_Example' do
+platform :ios, '11.0'
+
+target 'ZenText' do
   pod 'ZenText', :path => '../'
 
-  target 'ZenText_Tests' do
+  target 'ZenTextTests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
+    pod 'Quick'
+    pod 'Nimble'
   end
 end

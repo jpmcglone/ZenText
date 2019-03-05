@@ -21,7 +21,7 @@ open class Regex {
             if matches.count > 0 {
                 ranges = [NSRange]()
                 for match in matches {
-                    ranges!.append(match.rangeAt(match.numberOfRanges-1))
+                  ranges!.append(match.range(at: match.numberOfRanges-1))
                 }
                 return ranges
             }

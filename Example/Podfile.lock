@@ -1,22 +1,27 @@
 PODS:
-  - Nimble (3.2.0)
-  - Quick (0.9.3)
-  - ZenText (0.1.0)
+  - Nimble (8.0.0)
+  - Quick (2.0.0)
+  - ZenText (3.0.0)
 
 DEPENDENCIES:
-  - Nimble (~> 3.0)
-  - Quick (~> 0.8)
+  - Nimble
+  - Quick
   - ZenText (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   ZenText:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
-  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
-  ZenText: 53d227d11aa10568e5fe8b2f18934327cbe6e1a3
+  Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  ZenText: 5e68c280417f2fd9e19e54f5add7c59b614f393e
 
-PODFILE CHECKSUM: 69f64b79486a97220c06cd01599191408b54c144
+PODFILE CHECKSUM: 0f258e142f24909beb9df4e0e9ebc825ee6fc38b
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.6.1

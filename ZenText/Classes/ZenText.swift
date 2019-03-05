@@ -85,7 +85,7 @@ open class Manager {
         return lang
     }
     
-    open func attributesForStyle(_ style: Style?) -> [String : AnyObject]? {
+    open func attributesForStyle(_ style: Style?) -> [NSAttributedString.Key : AnyObject]? {
         guard let style = style else { return nil }
         
         // if there is no size, use 12
@@ -97,25 +97,26 @@ open class Manager {
             font = UIFont.systemFont(ofSize: fontSize)
         }
         
-        var attributes = [String : AnyObject]()
-        attributes[NSForegroundColorAttributeName] = style.color
+        var attributes = [NSAttributedString.Key : AnyObject]()
+        attributes[NSAttributedString.Key.foregroundColor] = style.color
         
         if let color = style.color, let alpha = style.alpha {
-            attributes[NSForegroundColorAttributeName] = color.withAlphaComponent(alpha)
+            attributes[NSAttributedString.Key.foregroundColor] = color.withAlphaComponent(alpha)
         }
         
-        attributes[NSFontAttributeName] = font
+        attributes[NSAttributedString.Key.font] = font
         
         if let underline = style.underline , underline {
-            attributes[NSUnderlineStyleAttributeName] = NSUnderlineStyle.styleSingle.rawValue as AnyObject?
+          attributes[NSAttributedString.Key.underlineStyle] = NSUnderlineStyle.single.rawValue as AnyObject?
         } else {
-            attributes[NSUnderlineStyleAttributeName] = nil
+            attributes[NSAttributedString.Key.underlineStyle] = nil
         }
         
-        attributes[NSBackgroundColorAttributeName] = style.backgroundColor
+        attributes[NSAttributedString.Key.backgroundColor] = style.backgroundColor
+      
         // For TTTLabel support
-        attributes["TTTBackgroundFillColor"] = style.backgroundColor?.cgColor
-        
+//        attributes["TTTBackgroundFillColor"] = style.backgroundColor?.cgColor
+      
         return attributes
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_ZenText {
+  umbrella header "Pods-ZenText-umbrella.h"
+
+  export *
+  module * { export * }
+}

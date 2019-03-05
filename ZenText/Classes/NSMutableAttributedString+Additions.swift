@@ -48,7 +48,7 @@ public extension NSMutableAttributedString {
     
     fileprivate func style(_ style: Style, matches: [NSTextCheckingResult], tokenized: Bool, replace: Bool) -> [NSTextCheckingResult]? {
         for match in matches {
-            let range = (tokenized ? match.rangeAt(match.numberOfRanges-1) : match.range)
+          let range = (tokenized ? match.range(at: match.numberOfRanges-1) : match.range)
             
             let attributes = ZenText.manager.attributesForStyle(style)
             if replace {

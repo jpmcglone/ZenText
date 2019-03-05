@@ -1,0 +1,6 @@
+framework module Pods_ZenTextTests {
+  umbrella header "Pods-ZenTextTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
