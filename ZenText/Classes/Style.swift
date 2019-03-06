@@ -1,6 +1,6 @@
 import Foundation
 
-open class Style: ExpressibleByStringLiteral {
+public class Style: ExpressibleByStringLiteral {
     open var color: UIColor?
     open var fontName: String?
     open var fontSize: CGFloat?
@@ -41,7 +41,7 @@ open class Style: ExpressibleByStringLiteral {
         self.backgroundColor = backgroundColor
     }
     
-    open func append(_ style: Style?) {
+    public func append(_ style: Style?) {
         guard let style = style else { return }
         if let color = style.color { self.color = color }
         if let fontName = style.fontName { self.fontName = fontName }

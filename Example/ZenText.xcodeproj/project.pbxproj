@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		224878B104B21B3A0B77DE9E /* Pods_ZenText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120F50EF6BD9EC1E233726A4 /* Pods_ZenText.framework */; };
-		5D06EC7586B6803E83558673 /* Pods_ZenTextTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B599E5A893DB845B6D8E6F6 /* Pods_ZenTextTests.framework */; };
+		34083F00D77162C4FBB12456 /* Pods_ZenTextExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42157E3034023CF771D6F219 /* Pods_ZenTextExample.framework */; };
+		46CE8D04D12C8DA37D5B4B04 /* Pods_ZenTextTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADAAF52DC8CAD3E0AE8F5A0 /* Pods_ZenTextTests.framework */; };
 		F01B788C222EC4EA0032DA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B788B222EC4EA0032DA89 /* AppDelegate.swift */; };
 		F01B788E222EC4EA0032DA89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B788D222EC4EA0032DA89 /* ViewController.swift */; };
 		F01B7891222EC4EA0032DA89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01B788F222EC4EA0032DA89 /* Main.storyboard */; };
@@ -28,12 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		120F50EF6BD9EC1E233726A4 /* Pods_ZenText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0516D388502446C37A2349 /* Pods-ZenTextTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextTests.release.xcconfig"; path = "Target Support Files/Pods-ZenTextTests/Pods-ZenTextTests.release.xcconfig"; sourceTree = "<group>"; };
-		212D5805FD3678EB924B5D6D /* Pods-ZenTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextTests.debug.xcconfig"; path = "Target Support Files/Pods-ZenTextTests/Pods-ZenTextTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C42A1A255DBE364624E0F59 /* Pods-ZenText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenText.debug.xcconfig"; path = "Target Support Files/Pods-ZenText/Pods-ZenText.debug.xcconfig"; sourceTree = "<group>"; };
-		9B599E5A893DB845B6D8E6F6 /* Pods_ZenTextTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenTextTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01B7888222EC4EA0032DA89 /* ZenText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42157E3034023CF771D6F219 /* Pods_ZenTextExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenTextExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A06095B379B81E82DB46D17 /* Pods-ZenTextExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextExample.debug.xcconfig"; path = "Target Support Files/Pods-ZenTextExample/Pods-ZenTextExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6ADAAF52DC8CAD3E0AE8F5A0 /* Pods_ZenTextTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenTextTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0012949D87265ECBA1ADFC /* Pods-ZenTextTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextTests.release.xcconfig"; path = "Target Support Files/Pods-ZenTextTests/Pods-ZenTextTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6E4CE8087CD8F903DEC84CD /* Pods-ZenTextExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextExample.release.xcconfig"; path = "Target Support Files/Pods-ZenTextExample/Pods-ZenTextExample.release.xcconfig"; sourceTree = "<group>"; };
+		F01B7888222EC4EA0032DA89 /* ZenTextExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenTextExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01B788B222EC4EA0032DA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F01B788D222EC4EA0032DA89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F01B7890222EC4EA0032DA89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		F01B789C222EC4EB0032DA89 /* ZenTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01B78A0222EC4EB0032DA89 /* ZenTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenTextTests.swift; sourceTree = "<group>"; };
 		F01B78A2222EC4EB0032DA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0F22F2C3DBC4826207C8039 /* Pods-ZenText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenText.release.xcconfig"; path = "Target Support Files/Pods-ZenText/Pods-ZenText.release.xcconfig"; sourceTree = "<group>"; };
+		F3C35606677B223CC912EB5E /* Pods-ZenTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenTextTests.debug.xcconfig"; path = "Target Support Files/Pods-ZenTextTests/Pods-ZenTextTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224878B104B21B3A0B77DE9E /* Pods_ZenText.framework in Frameworks */,
+				34083F00D77162C4FBB12456 /* Pods_ZenTextExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D06EC7586B6803E83558673 /* Pods_ZenTextTests.framework in Frameworks */,
+				46CE8D04D12C8DA37D5B4B04 /* Pods_ZenTextTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,19 +69,19 @@
 		6726FE6FBFA6D371A43D5A0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C42A1A255DBE364624E0F59 /* Pods-ZenText.debug.xcconfig */,
-				F0F22F2C3DBC4826207C8039 /* Pods-ZenText.release.xcconfig */,
-				212D5805FD3678EB924B5D6D /* Pods-ZenTextTests.debug.xcconfig */,
-				1A0516D388502446C37A2349 /* Pods-ZenTextTests.release.xcconfig */,
+				5A06095B379B81E82DB46D17 /* Pods-ZenTextExample.debug.xcconfig */,
+				C6E4CE8087CD8F903DEC84CD /* Pods-ZenTextExample.release.xcconfig */,
+				F3C35606677B223CC912EB5E /* Pods-ZenTextTests.debug.xcconfig */,
+				AE0012949D87265ECBA1ADFC /* Pods-ZenTextTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6C35D59DE2B60AFACA3828EE /* Frameworks */ = {
+		719F8B1A78A915F52590B205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				120F50EF6BD9EC1E233726A4 /* Pods_ZenText.framework */,
-				9B599E5A893DB845B6D8E6F6 /* Pods_ZenTextTests.framework */,
+				42157E3034023CF771D6F219 /* Pods_ZenTextExample.framework */,
+				6ADAAF52DC8CAD3E0AE8F5A0 /* Pods_ZenTextTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 				F01B789F222EC4EB0032DA89 /* ZenTextTests */,
 				F01B7889222EC4EA0032DA89 /* Products */,
 				6726FE6FBFA6D371A43D5A0A /* Pods */,
-				6C35D59DE2B60AFACA3828EE /* Frameworks */,
+				719F8B1A78A915F52590B205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F01B7889222EC4EA0032DA89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F01B7888222EC4EA0032DA89 /* ZenText.app */,
+				F01B7888222EC4EA0032DA89 /* ZenTextExample.app */,
 				F01B789C222EC4EB0032DA89 /* ZenTextTests.xctest */,
 			);
 			name = Products;
@@ -131,34 +131,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F01B7887222EC4EA0032DA89 /* ZenText */ = {
+		F01B7887222EC4EA0032DA89 /* ZenTextExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F01B78A5222EC4EB0032DA89 /* Build configuration list for PBXNativeTarget "ZenText" */;
+			buildConfigurationList = F01B78A5222EC4EB0032DA89 /* Build configuration list for PBXNativeTarget "ZenTextExample" */;
 			buildPhases = (
-				CE605BEB28382EBAE5903499 /* [CP] Check Pods Manifest.lock */,
+				457394102885D979F2FC4C9F /* [CP] Check Pods Manifest.lock */,
 				F01B7884222EC4EA0032DA89 /* Sources */,
 				F01B7885222EC4EA0032DA89 /* Frameworks */,
 				F01B7886222EC4EA0032DA89 /* Resources */,
-				D09C550A396DE56C47C71646 /* [CP] Embed Pods Frameworks */,
+				99A684EC0A880ED416001AF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZenText;
+			name = ZenTextExample;
 			productName = ZenText;
-			productReference = F01B7888222EC4EA0032DA89 /* ZenText.app */;
+			productReference = F01B7888222EC4EA0032DA89 /* ZenTextExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F01B789B222EC4EB0032DA89 /* ZenTextTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F01B78A8222EC4EB0032DA89 /* Build configuration list for PBXNativeTarget "ZenTextTests" */;
 			buildPhases = (
-				7AA6F9AFA7CC86CF4D354022 /* [CP] Check Pods Manifest.lock */,
+				33755FC575187EC772AD6273 /* [CP] Check Pods Manifest.lock */,
 				F01B7898222EC4EB0032DA89 /* Sources */,
 				F01B7899222EC4EB0032DA89 /* Frameworks */,
 				F01B789A222EC4EB0032DA89 /* Resources */,
-				007A711C5FD071B55983A07D /* [CP] Embed Pods Frameworks */,
+				38E14CC2C42386ABF74119A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F01B7887222EC4EA0032DA89 /* ZenText */,
+				F01B7887222EC4EA0032DA89 /* ZenTextExample */,
 				F01B789B222EC4EB0032DA89 /* ZenTextTests */,
 			);
 		};
@@ -229,7 +229,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		007A711C5FD071B55983A07D /* [CP] Embed Pods Frameworks */ = {
+		33755FC575187EC772AD6273 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZenTextTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E14CC2C42386ABF74119A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,7 +275,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZenTextTests/Pods-ZenTextTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7AA6F9AFA7CC86CF4D354022 /* [CP] Check Pods Manifest.lock */ = {
+		457394102885D979F2FC4C9F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,14 +290,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZenTextTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZenTextExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE605BEB28382EBAE5903499 /* [CP] Check Pods Manifest.lock */ = {
+		99A684EC0A880ED416001AF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,40 +305,20 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZenText-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D09C550A396DE56C47C71646 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZenText/Pods-ZenText-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZenTextExample/Pods-ZenTextExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZenText/ZenText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZenText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZenText/Pods-ZenText-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZenTextExample/Pods-ZenTextExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -344,7 +346,7 @@
 /* Begin PBXTargetDependency section */
 		F01B789E222EC4EB0032DA89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F01B7887222EC4EA0032DA89 /* ZenText */;
+			target = F01B7887222EC4EA0032DA89 /* ZenTextExample */;
 			targetProxy = F01B789D222EC4EB0032DA89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -487,7 +489,7 @@
 		};
 		F01B78A6222EC4EB0032DA89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C42A1A255DBE364624E0F59 /* Pods-ZenText.debug.xcconfig */;
+			baseConfigurationReference = 5A06095B379B81E82DB46D17 /* Pods-ZenTextExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,7 +507,7 @@
 		};
 		F01B78A7222EC4EB0032DA89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F22F2C3DBC4826207C8039 /* Pods-ZenText.release.xcconfig */;
+			baseConfigurationReference = C6E4CE8087CD8F903DEC84CD /* Pods-ZenTextExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,7 +525,7 @@
 		};
 		F01B78A9222EC4EB0032DA89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 212D5805FD3678EB924B5D6D /* Pods-ZenTextTests.debug.xcconfig */;
+			baseConfigurationReference = F3C35606677B223CC912EB5E /* Pods-ZenTextTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -543,7 +545,7 @@
 		};
 		F01B78AA222EC4EB0032DA89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A0516D388502446C37A2349 /* Pods-ZenTextTests.release.xcconfig */;
+			baseConfigurationReference = AE0012949D87265ECBA1ADFC /* Pods-ZenTextTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -573,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F01B78A5222EC4EB0032DA89 /* Build configuration list for PBXNativeTarget "ZenText" */ = {
+		F01B78A5222EC4EB0032DA89 /* Build configuration list for PBXNativeTarget "ZenTextExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F01B78A6222EC4EB0032DA89 /* Debug */,

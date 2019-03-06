@@ -2,9 +2,9 @@ use_frameworks!
 
 platform :ios, '11.0'
 
-target 'ZenText' do
+target 'ZenTextExample' do
   pod 'ZenText', :path => '../'
-
+  pod 'SnapKit'
   target 'ZenTextTests' do
     inherit! :search_paths
 

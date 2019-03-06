@@ -1,17 +1,20 @@
 PODS:
   - Nimble (8.0.0)
   - Quick (2.0.0)
+  - SnapKit (4.2.0)
   - ZenText (3.0.0)
 
 DEPENDENCIES:
   - Nimble
   - Quick
+  - SnapKit
   - ZenText (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
+    - SnapKit
 
 EXTERNAL SOURCES:
   ZenText:
@@ -20,8 +23,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   ZenText: 5e68c280417f2fd9e19e54f5add7c59b614f393e
 
-PODFILE CHECKSUM: 0f258e142f24909beb9df4e0e9ebc825ee6fc38b
+PODFILE CHECKSUM: 0589eb75f6f08b9140343beb6f824a7faa7c6570
 
 COCOAPODS: 1.6.1

@@ -2,8 +2,8 @@ import Foundation
 
 public let manager = Manager(config: Config())
 
-open class Manager {
-    open var config: Config
+public class Manager {
+    public var config: Config
     
     // applying a style only updates the non-nil values. In the order the styles are applied.
     public init(config: Config) {
@@ -11,23 +11,23 @@ open class Manager {
     }
     
     // This will ignore style
-    open func string(key: String, args: [String] = []) -> String? {
+    public func string(key: String, args: [String] = []) -> String? {
         guard let language = firstAvailableLanguage(key: key) else { return key }
-        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
-        return string(copyComponents, args: args)
+        guard let textComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
+        return string(textComponents, args: args)
     }
     
     // Get a styled (attributed) string from `copy`
-    open func attributedString(key: String, args: [String] = []) -> NSAttributedString? {
+    public func attributedString(key: String, args: [String] = []) -> NSAttributedString? {
         guard let language = firstAvailableLanguage(key: key) else { return NSAttributedString(string: key) }
-        guard let copyComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
-        return attributedString(copyComponents, args: args)
+        guard let textComponents = config._copy[language]?[key] ?? config.copy?(language, key) else { return nil }
+        return attributedString(textComponents, args: args)
     }
     
-    open func string(_ copyComponents: [CopyComponent], args: [String] = []) -> String {
+    public func string(_ textComponents: [TextComponent], args: [String] = []) -> String {
         var string = ""
-        //combine copyComponents without their style
-        for component in copyComponents {
+        //combine textComponents without their style
+        for component in textComponents {
             // check for args in component
             // TODO: this isn't very efficient. Consider an algorithm that does this in one pass, instead of n
             var value = component.value
@@ -43,10 +43,10 @@ open class Manager {
         return styleString.components(separatedBy: " ")
     }
     
-    // Make an attributedString on the fly with CopyComponents
-    open func attributedString(_ copyComponents: [CopyComponent], args: [String] = []) -> NSAttributedString {
+    // Make an attributedString on the fly with TextComponents
+    public func attributedString(_ textComponents: [TextComponent], args: [String] = []) -> NSAttributedString {
         let string = NSMutableAttributedString()
-        for component in copyComponents {
+        for component in textComponents {
             var value = component.value
             for (index, arg) in args.enumerated() {
                 value = value.replacingOccurrences(of: "$\(index)", with: arg)
@@ -85,7 +85,7 @@ open class Manager {
         return lang
     }
     
-    open func attributesForStyle(_ style: Style?) -> [NSAttributedString.Key : AnyObject]? {
+    public func attributesForStyle(_ style: Style?) -> [NSAttributedString.Key : AnyObject]? {
         guard let style = style else { return nil }
         
         // if there is no size, use 12

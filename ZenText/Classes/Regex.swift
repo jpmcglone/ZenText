@@ -1,5 +1,5 @@
-open class Regex {
-    open class func findTokens(_ regex: String, text: String) -> [String]? {
+public class Regex {
+    public class func findTokens(_ regex: String, text: String) -> [String]? {
         if let ranges = findTokenRanges(regex, text: text) {
             var results = [String]()
             for range in ranges {
@@ -11,11 +11,11 @@ open class Regex {
     }
     
     // This method supports one capture group. If you use more than one, it will return the last range of each match.
-    open class func findTokenRanges(_ regex: String, text: String) -> [NSRange]? {
+    public class func findTokenRanges(_ regex: String, text: String) -> [NSRange]? {
         do {
             var ranges: [NSRange]?
             let regularExpression = try NSRegularExpression(pattern: regex, options: NSRegularExpression.Options(rawValue: 0))
-            let range = NSRange(location: 0, length: text.characters.count)
+            let range = NSRange(location: 0, length: text.count)
             let matches = regularExpression.matches(in: text, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: range)
             
             if matches.count > 0 {

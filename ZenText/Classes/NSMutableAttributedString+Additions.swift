@@ -36,7 +36,7 @@ public extension NSMutableAttributedString {
     
     // Set (replace) style
     public func setStyle(named styleName: String, dataDetector: NSDataDetector, tokenized: Bool = true, replace: Bool = true) -> [NSTextCheckingResult]? {
-        let matches = dataDetector.matches(in: string, options: [], range: NSRange(location: 0, length: string.characters.count))
+        let matches = dataDetector.matches(in: string, options: [], range: NSRange(location: 0, length: string.count))
         let style = Style()
         for styleName in ZenText.manager.styleNamesFromStyleString(styleName) {
             if let s = ZenText.manager.config.styles?(styleName) {
